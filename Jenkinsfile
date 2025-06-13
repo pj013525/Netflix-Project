@@ -34,7 +34,8 @@ pipeline {
                     sh "docker login -u pj013525 -p ${dockerhubPassword}"
                     sh 'docker push pj013525/tomcat-image:v1'
                 } 
-            } 
+            }
+        }    
         stage('Docker Container') {
             steps {
                     sh 'docker run -dt --name hotstarapp -p 9000:9000 pj013525/tomcat-image:v1'
