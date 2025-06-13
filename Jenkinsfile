@@ -12,14 +12,9 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('Testing') {
-            steps {
-                sh 'mvn test'
-            }
-        }
         stage('Packing') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn package'
             }
         }
         stage('Deploying To Tomcat') {
