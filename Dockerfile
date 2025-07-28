@@ -7,7 +7,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copy WAR file to tomcat webapps folder
 COPY target/myapp.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port 8080
+# Expose port 9000
 EXPOSE 9000
 
 # Start Tomcat
