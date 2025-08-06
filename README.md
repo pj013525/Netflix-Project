@@ -1,28 +1,22 @@
-# Netflix-Application Project
-
-This is a **Netflix application clone** project built with modern DevOps tools and practices.
-
----
-
 ## 🚀 Tools Used
 
-- **Terraform** – Infrastructure as code  
-- **Git & GitHub** – Version control & source code management  
-- **Jenkins** – CI/CD automation pipeline  
-- **Maven** – Build the application  
-- **SonarQube** – Code quality analysis  
-- **Nexus** – Artifact repository  
-- **Docker** – Containerize and deploy the application  
-- **Docker Hub** – Store Docker images  
-- **Application Load Balancer (ALB)** – Distribute load across servers  
-- **Route 53** – DNS mapping for the application  
+- **Terraform** – Infrastructure as Code  
+- **Git & GitHub** – Version Control & Source Code Management (SCM)  
+- **Jenkins** – CI/CD Automation Pipeline  
+- **Maven** – Build the Application  
+- **SonarQube** – Code Quality Analysis  
+- **Nexus** – Artifact Repository  
+- **Docker** – Containerize and Deploy the Application  
+- **Docker Hub** – Store Docker Images  
+- **Application Load Balancer (ALB)** – Distribute Load Across Servers  
+- **Route 53** – DNS Mapping for the Application  
 
 ---
 
 ## 🛠️ Step-by-Step Guide
 
 ### Step 1: Terraform Setup  
-Create a `main.tf` with necessary AWS resources and apply it.  
+Create a `main.tf` with all necessary AWS resources and apply it.  
 ![Terraform Apply](https://github.com/user-attachments/assets/cc7deda8-0519-4464-848c-9b31174bc1d7)
 
 ### Step 2: AWS Console – Get EC2 Public IP  
@@ -56,6 +50,12 @@ Create a `main.tf` with necessary AWS resources and apply it.
 
 ### Step 14: Push Dockerfile and Jenkinsfile to GitHub  
 
+```bash
+git add Dockerfile Jenkinsfile
+git commit -m "Added Dockerfile and Jenkinsfile"
+git push origin main
+```
+
 ### Step 15: Run Jenkins Build  
 ![Build Trigger](https://github.com/user-attachments/assets/86b79fae-7ba4-49d5-a88a-3d6b358b6fb8)  
 ![Console Output](https://github.com/user-attachments/assets/9712378a-cf71-4c70-92b3-adb0b475eb2e)
@@ -68,7 +68,7 @@ Create a `main.tf` with necessary AWS resources and apply it.
 ![App Access](https://github.com/user-attachments/assets/f3670b56-d986-4586-a3c5-ac3d8f49fc8b)
 
 ### Step 18: Attach IP to Load Balancer  
-![Load Balancer Setup](https://github.com/user-attachments/assets/dd624c2c-7515-4ecf-80b8-8c5918ae9fa3)
+<img width="1342" height="681" alt="image" src="https://github.com/user-attachments/assets/32328916-323f-43aa-8573-1bf5fa05524e" />
 
 ### Step 19: Route 53 – DNS Mapping  
 ![Route 53 DNS](https://github.com/user-attachments/assets/de0b888a-67cf-4107-82b2-b3679ebc18f9)
@@ -84,8 +84,8 @@ Create a `main.tf` with necessary AWS resources and apply it.
 
 ---
 
+## 👨‍💻 Padmarao Jonna
 
-**Padmarao Jonna**  
-AWS DevOps Engineer  
-GitHub: [pj013525](https://github.com/pj013525)
-LinkedIn: [pj013525](www.linkedin.com/in/padmarao-jonna)
+**AWS DevOps Engineer**  
+GitHub: [pj013525](https://github.com/pj013525)  
+LinkedIn: [padmarao-jonna](https://www.linkedin.com/in/padmarao-jonna)
