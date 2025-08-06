@@ -1,14 +1,13 @@
-# Use OpenJDK base image
 FROM openjdk:17-jdk-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy the WAR file into the container
-COPY target/myapp.war /app/target/myapp.war
+# Copy the WAR file and rename it
+COPY target/myapp.war app.war
 
-# Expose application port (example: 8080)
-EXPOSE 8000
+# Expose port (Spring Boot default is 8080)
+EXPOSE 8080
 
-# Run the JAR file
-ENTRYPOINT ["java", "-jar", "myapp.war"]
+# Run using java -jar
+ENTRYPOINT ["java", "-jar", "app.war"]
