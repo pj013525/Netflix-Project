@@ -1,13 +1,12 @@
-FROM openjdk:17-jdk-slim
+# Use Apache Tomcat as the base image
+FROM tomcat:9-jdk17
 
-# Set working directory
-WORKDIR /app
+# Clean default webapps (optional)
+RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy the WAR file and rename it
-COPY target/myapp.war app.war
+# Copy your WAR file to Tomcat's webapps directory
+COPY target/myapp.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port (Spring Boot default is 8080)
+# Expose the default Tomcat port
 EXPOSE 8080
 
-# Run using java -jar
-ENTRYPOINT ["java", "-jar", "app.war"]
