@@ -49,29 +49,48 @@
         </div>
     </div>
 
-    <!-- ------------------ Video Card ------------------ -->
-    <div class="video-card-container">
-        <div class="video-card">
-            <img src="./assets/img/disney.png" class="video-card-image" alt="">
-            <video src="./assets/video/disney.mp4" mute loop class="card-video"></video>
-        </div>
-        <div class="video-card">
-            <img src="./assets/img/pixar.png" class="video-card-image" alt="">
-            <video src="./assets/video/pixar.mp4" mute loop class="card-video"></video>
-        </div>
-        <div class="video-card">
-            <img src="./assets/img/marvel.png" class="video-card-image" alt="">
-            <video src="./assets/video/marvel.mp4" mute loop class="card-video"></video>
-        </div>
-        <div class="video-card">
-            <img src="./assets/img/star-wars.png" class="video-card-image" alt="">
-            <video src="./assets/video/star-war.mp4" mute loop class="card-video"></video>
-        </div>
-        <div class="video-card">
-            <img src="./assets/img/geographic.png" class="video-card-image" alt="">
-            <video src="./assets/video/geographic.mp4" mute loop class="card-video"></video>
-        </div>
+   <!-- ------------------ Video Card ------------------ -->
+<div class="video-card-container">
+    <div class="video-card">
+        <img src="./assets/img/disney.png" class="video-card-image" alt="Disney Logo">
+        <video src="./assets/video/disney.mp4" muted loop controls class="card-video">
+            <track src="./assets/subtitles/disney-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="./assets/descriptions/disney-desc.vtt" kind="descriptions" srclang="en" label="Audio Description">
+        </video>
     </div>
+
+    <div class="video-card">
+        <img src="./assets/img/pixar.png" class="video-card-image" alt="Pixar Logo">
+        <video src="./assets/video/pixar.mp4" muted loop controls class="card-video">
+            <track src="./assets/subtitles/pixar-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="./assets/descriptions/pixar-desc.vtt" kind="descriptions" srclang="en" label="Audio Description">
+        </video>
+    </div>
+
+    <div class="video-card">
+        <img src="./assets/img/marvel.png" class="video-card-image" alt="Marvel Logo">
+        <video src="./assets/video/marvel.mp4" muted loop controls class="card-video">
+            <track src="./assets/subtitles/marvel-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="./assets/descriptions/marvel-desc.vtt" kind="descriptions" srclang="en" label="Audio Description">
+        </video>
+    </div>
+
+    <div class="video-card">
+        <img src="./assets/img/star-wars.png" class="video-card-image" alt="Star Wars Logo">
+        <video src="./assets/video/star-war.mp4" muted loop controls class="card-video">
+            <track src="./assets/subtitles/starwars-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="./assets/descriptions/starwars-desc.vtt" kind="descriptions" srclang="en" label="Audio Description">
+        </video>
+    </div>
+
+    <div class="video-card">
+        <img src="./assets/img/geographic.png" class="video-card-image" alt="National Geographic Logo">
+        <video src="./assets/video/geographic.mp4" muted loop controls class="card-video">
+            <track src="./assets/subtitles/geographic-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="./assets/descriptions/geographic-desc.vtt" kind="descriptions" srclang="en" label="Audio Description">
+        </video>
+    </div>
+</div>
 
     <!-- ------------------ Recommendation ------------------ -->
     <h1 class="title">recommended for you</h1>
