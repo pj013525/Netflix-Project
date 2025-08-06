@@ -1,3 +1,9 @@
+# Netflix-Application Project
+
+This is a **Netflix application clone** project built with modern DevOps tools and practices.
+
+---
+
 ## 🚀 Tools Used
 
 - **Terraform** – Infrastructure as Code  
